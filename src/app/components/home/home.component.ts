@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { LottieComponent, AnimationOptions } from 'ngx-lottie';
-import players from 'lottie-web'
+import player from 'lottie-web'
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    LottieComponent
+    LottieComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -16,11 +16,11 @@ import players from 'lottie-web'
 export class HomeComponent {
   title = 'Evénement de Santé 2025';
   options: AnimationOptions = {
-    path: 'asssests/animation.json'
+    path: '/animation/Animation.json'
   };
 
   static playerFactory() {
-    return players;
+    return player;
   }
 
 }
