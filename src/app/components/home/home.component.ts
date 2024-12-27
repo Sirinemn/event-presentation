@@ -16,7 +16,7 @@ import player from 'lottie-web'
 export class HomeComponent {
   title = 'Evénement de Santé 2025';
   options: AnimationOptions = {
-    path: '/animation/Animation.json'
+    path: '/assets/animation/Animation_1.json'
   };
 
   static playerFactory() {
