@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
+  description = 'À propos de l\'événement Santé 2025. Un événement unique qui rassemble les meilleurs experts de la santé pour discuter des dernières avancées.'
 }
