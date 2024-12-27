@@ -1,26 +1,22 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { LottieComponent, AnimationOptions } from 'ngx-lottie';
-import player from 'lottie-web'
-
+import { Component, AfterViewInit } from '@angular/core';
+import player from 'lottie-web'; 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    CommonModule,
-    LottieComponent,
-  ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss'],
+  imports: [],
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   title = 'Evénement de Santé 2025';
-  options: AnimationOptions = {
-    path: '/assets/animation/Animation_1.json'
-  };
-
-  static playerFactory() {
-    return player;
+  ngAfterViewInit(): void {
+    player.loadAnimation({
+      container: document.getElementById('lottie-container')!,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/animation/Animation.json', 
+    });
   }
-
 }
+

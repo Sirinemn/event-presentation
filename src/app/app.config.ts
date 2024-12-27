@@ -5,7 +5,13 @@ import { routes } from './app.routes';
 import { provideLottieOptions } from 'ngx-lottie';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideLottieOptions({
-    player: () => player, 
-  }),]
+  providers: [
+    provideZoneChangeDetection({ 
+    eventCoalescing: true 
+    }),
+    provideRouter(routes),
+    provideLottieOptions({
+      player: () => player, 
+    })
+  ]
 };
