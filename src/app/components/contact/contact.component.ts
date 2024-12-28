@@ -14,6 +14,7 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angula
 })
 export class ContactComponent {
   contactForm: FormGroup; 
+  formSubmitted: boolean = false;
 
   constructor() { this.contactForm = new FormGroup({ 
     name: new FormControl('', [Validators.required]), 
@@ -23,7 +24,9 @@ export class ContactComponent {
   } 
   onSubmit() { 
     if (this.contactForm.valid) { 
-      console.log('Form Submitted!', this.contactForm.value); 
-     } 
+      console.log('Form Submitted!', this.contactForm.value);
+      this.formSubmitted = true; 
+      this.contactForm.reset();
+    } 
   }
 }
