@@ -3,24 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: white;
+  color: black;
 }
 
 .logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
 }
 
 .logo-icon {
-  width: 50px;   /* Taille de l'icône */
-  height: 50px;  /* Taille de l'icône */
+  width: 60px;   
+  height: 60px;  
   margin-right: 10px;
-  border-radius: 50%; /* Rendre l'icône ronde */
+  border-radius: 50%; 
 }
 
 .nav-links {
@@ -34,7 +33,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: 'Lato', sans-serif;
   transition: color 0.3s;
 }
