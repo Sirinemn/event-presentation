@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+import player from 'lottie-web'; 
 
 @Component({
   selector: 'app-about',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent {
-  description = 'À propos de l\'événement Santé 2025. Un événement unique qui rassemble les meilleurs experts de la santé pour discuter des dernières avancées.'
+export class AboutComponent implements AfterViewInit{
+  title = 'Evénement de Santé 2025';
+  ngAfterViewInit(): void {
+    player.loadAnimation({
+      container: document.getElementById('lottie-container')!,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/animation/Animation.json', 
+    });
+  }
 }
