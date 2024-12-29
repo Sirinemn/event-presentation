@@ -1,9 +1,12 @@
 <div class="speakers">
-    <h2>Our Speakers</h2>
+  <h2>Our Speakers</h2>
+  <div class="speaker-list">
     <div class="speaker" *ngFor="let speaker of speakers">
       <img [src]="speaker.photo" alt="{{ speaker.name }}">
       <h3>{{ speaker.name }}</h3>
       <p>{{ speaker.bio }}</p>
     </div>
   </div>
+</div>
+
   

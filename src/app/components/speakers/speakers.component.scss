@@ -1,28 +1,31 @@
 .speakers {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .speaker {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    }
-  
-    h3 {
-      margin-top: 10px;
-      font-size: 1.5rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  }
-  
+  text-align: center;
+  padding: 20px;
+}
+
+.speaker-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.speaker {
+  flex: 0 0 200px; /* Largeur fixe ou ajustable */
+  margin: 30px;
+  text-align: center; /* Centrer le texte et l'image */
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
