@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-speakers',
@@ -17,4 +18,14 @@ export class SpeakersComponent {
     { name: 'Dr. Alice Brown', bio: 'Chercheuse en machine learning appliqué à la santé.', photo: 'assets/images/alice-brown.jpg' },
     { name: 'Dr. Mark Johnson', bio: 'Pionnier des technologies d\'imagerie médicale.', photo: 'assets/images/mark-johnson.png' },
   ];
+
+  ngAfterViewInit(): void { 
+    gsap.from('.speaker', { 
+      opacity: 0, 
+      y: 50, 
+      stagger: 0.3, // Intervalle entre chaque animation 
+      duration: 1, 
+      ease: 'power2.out' 
+    }); 
+  }
 }
