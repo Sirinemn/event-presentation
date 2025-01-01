@@ -1,9 +1,27 @@
 .footer {
-  background-color: black;
-  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
-  text-align: center;
+  color: black;
   font-family: 'Lato', sans-serif;
   border-top: 1px solid #ddd;
+  flex-wrap: wrap; 
 }
 
+.footer p {
+  flex: 1; 
+  white-space: nowrap; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+}
