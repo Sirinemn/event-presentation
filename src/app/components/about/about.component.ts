@@ -9,7 +9,6 @@ import player from 'lottie-web';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent implements AfterViewInit{
-  title = 'Evénement de Santé 2025';
   ngAfterViewInit(): void {
     player.loadAnimation({
       container: document.getElementById('lottie-container')!,
