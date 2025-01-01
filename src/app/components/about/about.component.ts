@@ -1,10 +1,13 @@
+import { NgIf } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import player from 'lottie-web'; 
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [
+    NgIf
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
@@ -17,5 +20,9 @@ export class AboutComponent implements AfterViewInit{
       autoplay: true,
       path: 'assets/animation/Animation.json', 
     });
+  }
+  showInfographic = false; 
+  toggleInfographic() { 
+    this.showInfographic = !this.showInfographic; 
   }
 }
