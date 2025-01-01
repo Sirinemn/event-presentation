@@ -1,10 +1,84 @@
 .home {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    color: #333;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 40px 0; /* Ajoute de l'espace entre le header/footer et la section */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4em; /* Augmenter la taille du titre */
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.content-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.home-text {
+  flex: 1;
+  font-size: 1.2em;
+  color: #333;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#paragraphe {
+  margin-bottom: 20px;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AI-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#lottie-container {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
