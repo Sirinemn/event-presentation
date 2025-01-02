@@ -9,7 +9,7 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'speakers', component: SpeakersComponent },
-    { path: 'contact', component: ContactComponent},
+    { path: 'signin', component: ContactComponent},
     { path: '404', component: NotFoundComponent },
     { path: '**', redirectTo: '404' },
 ];
