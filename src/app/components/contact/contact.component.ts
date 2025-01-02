@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -14,19 +14,18 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angula
 })
 export class ContactComponent {
   contactForm: FormGroup; 
-  formSubmitted: boolean = false;
-
-  constructor() { this.contactForm = new FormGroup({ 
-    name: new FormControl('', [Validators.required]), 
-    email: new FormControl('', [Validators.required, Validators.email]), 
-    message: new FormControl('', [Validators.required, Validators.minLength(10)]) 
-    }); 
+  formSubmitted = false; 
+  constructor(private fb: FormBuilder) { 
+    this.contactForm = this.fb.group({ 
+       name: ['', Validators.required],
+       email: ['', [Validators.required, Validators.email]], 
+       message: ['', [Validators.required, Validators.minLength(10)]] 
+      });
   } 
   onSubmit() { 
     if (this.contactForm.valid) { 
-      console.log('Form Submitted!', this.contactForm.value);
       this.formSubmitted = true; 
-      this.contactForm.reset();
-    } 
+      setTimeout(() => this.formSubmitted = false, 3000);
+       } 
   }
 }

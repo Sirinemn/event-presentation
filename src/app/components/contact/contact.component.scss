@@ -1,6 +1,6 @@
 .contact {
   text-align: center;
-  max-width: 900px; 
+  max-width: 500px; 
   margin: 60px auto; 
   padding: 40px; 
   border: 1px solid #ddd;
@@ -10,19 +10,20 @@
 }
 
 .form-group {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px; 
   position: relative;
 }
 
 label {
-  display: block;
+  flex: 1;
   font-weight: bold;
-  margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
 input, textarea {
-  width: 100%;
+  flex: 2;
   padding: 15px; 
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -36,6 +37,9 @@ input:focus, textarea:focus {
 
 small {
   color: red;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }
 
 button[disabled] {
@@ -43,21 +47,29 @@ button[disabled] {
   cursor: not-allowed;
 }
 
-.confirmation-message {
-  margin-top: 30px; /* Augmenter l'espacement au-dessus du message de confirmation */
-  padding: 15px; /* Augmenter le padding du message de confirmation */
-  border: 1px solid #00509D;
-  background-color: #003F88;
-  color: #FDC500;
-  border-radius: 5px;
-  animation: fadeIn 0.5s ease-in-out;
+.snackbar {
+  visibility: visible;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  animation: fadeIn 0.5s ease-in-out, fadeOut 0.5s 2.5s ease-in-out;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeOut {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
 }
