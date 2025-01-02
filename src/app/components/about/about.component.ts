@@ -18,7 +18,7 @@ export class AboutComponent implements AfterViewInit{
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'assets/animation/Animation.json', 
+      path: 'assets/animation/Animation-about.json', 
     });
   }
   showInfographic = false; 
