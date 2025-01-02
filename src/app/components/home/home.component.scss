@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin: 40px 0; /* Ajoute de l'espace entre le header/footer et la section */
+  margin: 30px 0; /* Ajoute de l'espace entre le header/footer et la section */
 }
 
 .home-container {
@@ -11,14 +11,6 @@
   flex-direction: column;
   align-items: center;
   max-width: 1000px;
-  width: 100%;
-}
-
-h1 {
-  font-size: 4em; /* Augmenter la taille du titre */
-  color: #003366;
-  margin-bottom: 20px;
-  text-align: left;
   width: 100%;
 }
 
@@ -59,7 +51,7 @@ h1 {
 
 .cta-section {
   display: flex;
-  align-items: center;
+  align-items: end;
   margin-top: 20px;
 }
 
@@ -67,18 +59,4 @@ h1 {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }

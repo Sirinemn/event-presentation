@@ -6,8 +6,18 @@ body {
     color: #333;
   }
   
-  h1, h2, h3 {
-    color: #0056b3;
+  h1 {
+    font-size: 4em; /* Augmenter la taille du titre */
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+  }
+  h2 {
+    color: #003F88;
+  }
+  h3 {
+    color: #00509D;
   }
   
   a {
@@ -16,5 +26,18 @@ body {
   
   .active {
     font-weight: bold;
+  }
+  button {
+    background-color: black;
+    color: #FDC500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   
