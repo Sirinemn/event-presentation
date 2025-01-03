@@ -39,6 +39,9 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: #007bff;
 }
+textarea {
+  margin-bottom: 20px;
+}
 
 small {
   color: red;
