@@ -36,12 +36,14 @@
   footer p {
     flex: 1;
     white-space: nowrap;
+    margin-left: 20px;
   }
   
   .social-media {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 20px;
   }
   
   .social-media img {
@@ -49,8 +51,7 @@
     width: 40px;
     margin: 5px;
   }
-  
-  
+   
   h1 {
     font-size: 4em; /* Augmenter la taille du titre */
     color: #003366;
