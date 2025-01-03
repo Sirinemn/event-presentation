@@ -1,3 +1,5 @@
+/* CSS Initial */
+
 .home {
   display: flex;
   flex-direction: column;
@@ -51,7 +53,7 @@
 
 .cta-section {
   display: flex;
-  align-items: end;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -59,4 +61,42 @@
   width: 50px;
   height: 50px;
   margin-right: 10px;
+}
+
+/* Styles Responsives */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 1.5rem; /* Réduire la taille du titre */
+    text-align: center;
+  }
+
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-image {
+    order: 1;
+    max-width: 200px;
+    margin-bottom: 20px; /* Ajoute une marge en bas de l'image */
+  }
+
+  .home-text {
+    order: 2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .cta-section {
+    order: 3;
+    flex-direction: row; /* Conserver l'alignement horizontal */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+  }
+
+  #lottie-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 }
