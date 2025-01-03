@@ -5,11 +5,15 @@
       Santé 2025
     </a>
   </div>
-  <ul class="nav-links">
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="nav-links" [class.active]="menuActive">
     <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Accueil</a></li>
     <li><a routerLink="/signin" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">S'inscrire</a></li>
     <li><a routerLink="/speakers" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Speakers</a></li>
     <li><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">À propos</a></li>
   </ul>
 </nav>
-  
