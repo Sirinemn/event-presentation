@@ -1,10 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     color: #333;
   }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    border-top: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+  
+  footer p {
+    flex: 1;
+    white-space: nowrap;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .social-media img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+  }
+  
   
   h1 {
     font-size: 4em; /* Augmenter la taille du titre */

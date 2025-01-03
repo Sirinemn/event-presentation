@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0; 
   color: black;
   font-family: 'Lato', sans-serif;
   border-top: 1px solid #ddd;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .footer p {
-  flex: 1; 
+  flex: 1;
   white-space: nowrap; 
 }
 
@@ -21,7 +21,7 @@
 }
 
 img {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
+  height: 40px;
+  width: 40px; 
+  margin: 5px;  
 }
