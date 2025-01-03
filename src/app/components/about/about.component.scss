@@ -9,7 +9,7 @@
 .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center; /* Alignement des éléments au centre verticalement */
   justify-content: space-between;
   animation: fadeIn 1s ease-in-out;
 }
@@ -29,6 +29,9 @@
 
 #lottie-container {
   animation: bounceIn 1.5s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
 h2 {
@@ -61,7 +64,7 @@ li {
 
 .infographic-image {
   width: 100%;
-  max-width: 450px;
+  max-width: 1000px; /* Largeur maximale de l'infographie */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -172,5 +175,23 @@ li {
   100% {
     opacity: 1;
     transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-content,
+  .right-content {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .infographic-image {
+    max-width: 90%;
   }
 }
