@@ -22,16 +22,17 @@
     flex-direction: column;
   }
   
-  footer {
+  .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    color: black;
-    font-family: 'Lato', sans-serif;
-    border-top: 1px solid #ddd;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 10px 20px; /* Ajoute de l'espace autour du contenu */
+    min-height: 60px; /* Assure une hauteur minimale pour le footer */
+    border-top: 1px solid #ddd; /* Bordure supérieure */
+    background-color: #f8f9fa; /* Ajoute une couleur de fond pour tester */
   }
+  
   
   footer p {
     flex: 1;

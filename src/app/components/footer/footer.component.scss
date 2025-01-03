@@ -5,43 +5,30 @@ img {
   margin: 5px;
 }
 
-/* Media Queries pour Responsiveness */
 @media (max-width: 768px) {
   .footer {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Réorganise les éléments verticalement */
+    text-align: center; /* Centre le texte */
   }
 
   .footer p {
-    margin-bottom: 10px;
-    text-align: center;
-    white-space: normal; /* Permet le retour à la ligne */
+    margin-bottom: 10px; /* Ajoute un espacement sous le texte */
+    white-space: normal; /* Permet au texte de revenir à la ligne */
   }
 
   .social-media {
-    justify-content: center;
-  }
-
-  img {
-    height: 30px;
-    width: 30px;
+    justify-content: center; /* Centre les icônes de réseaux sociaux */
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 20px 0;
-  }
-
-  .footer p {
-    margin-bottom: 10px;
-    text-align: center;
-    white-space: normal; /* Permet le retour à la ligne */
+    padding: 20px; /* Ajoute un espace suffisant pour les très petits écrans */
   }
 
   img {
     height: 25px;
-    width: 25px;
-    margin: 3px;
+    width: 25px; /* Redimensionne les icônes pour les petits écrans */
   }
 }
+
