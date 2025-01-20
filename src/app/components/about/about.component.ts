@@ -18,9 +18,12 @@ export class AboutComponent implements AfterViewInit{
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'assets/animation/Animation-about.json', 
+      path: 'assets/animation/Animation-about.json',
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid meet', // Rend l'animation proportionnelle
+      },
     });
-  }
+  }  
   showInfographic = false; 
   toggleInfographic() { 
     this.showInfographic = !this.showInfographic; 

@@ -16,11 +16,10 @@
     <div class="right-content">
       <div id="lottie-container" style="width: 100%; max-width: 300px; height: auto; margin: auto;"></div>
     </div>
-  </div>
-  <div class="modal" *ngIf="showInfographic" (click)="toggleInfographic()">
-    <div class="modal-content" (click)="$event.stopPropagation()">
-      <span class="close" (click)="toggleInfographic()">&times;</span>
-      <img src="assets/images/infographic.png" alt="Infographie des avantages de l'IA en santé" class="infographic-image">
-    </div>
-  </div>
+    <div class="modal" *ngIf="showInfographic" (click)="toggleInfographic()">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <span class="close" (click)="toggleInfographic()">&times;</span>
+        <img src="assets/images/infographic.png" alt="Infographie des avantages de l'IA en santé" class="infographic-image">
+      </div>
+    </div>    
 </div>

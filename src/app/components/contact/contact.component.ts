@@ -27,5 +27,9 @@ export class ContactComponent {
       this.formSubmitted = true; 
       setTimeout(() => this.formSubmitted = false, 3000);
        } 
+    this.resetForm();
+  }
+  private resetForm() {
+    this.contactForm.reset();
   }
 }

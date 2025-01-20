@@ -1,3 +1,4 @@
+/* Styles généraux */
 .event-topic {
   padding: 20px;
   background-color: var(--accent-color);
@@ -9,7 +10,7 @@
 .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; /* Alignement des éléments au centre verticalement */
+  align-items: center; /* Centrage vertical */
   justify-content: space-between;
   animation: fadeIn 1s ease-in-out;
 }
@@ -25,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 #lottie-container {
@@ -62,15 +64,8 @@ li {
   animation: fadeIn 2s ease-in-out;
 }
 
-.infographic-image {
-  width: 100%;
-  max-width: 1000px; /* Largeur maximale de l'infographie */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 2s ease-in-out;
-}
 
+/* Styles pour la modal */
 .modal {
   display: flex;
   justify-content: center;
@@ -88,10 +83,26 @@ li {
 .modal-content {
   position: relative;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%; 
+  max-height: 90%; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: slideInFromBottom 0.5s ease-in-out;
+}
+
+.infographic-image {
+  width: auto;
+  height: auto;
+  max-width: 100%; 
+  max-height: none; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -108,7 +119,7 @@ li {
   color: #000;
 }
 
-/* Animation Keyframes */
+/* Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -178,20 +189,46 @@ li {
   }
 }
 
-/* Responsive */
+/* Responsivité */
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
     align-items: center;
   }
 
-  .left-content,
+  .left-content, 
   .right-content {
     max-width: 100%;
     margin: 10px 0;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  ul {
+    margin-left: 10px;
+  }
+
   .infographic-image {
     max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .infographic-image {
+    max-width: 95%;
   }
 }

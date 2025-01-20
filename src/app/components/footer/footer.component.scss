@@ -5,30 +5,31 @@ img {
   margin: 5px;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column; /* Réorganise les éléments verticalement */
-    text-align: center; /* Centre le texte */
+@media (min-width: 768px) {
+  footer {
+    justify-content: space-between; /* Répartit les éléments pour les écrans moyens et grands */
   }
-
-  .footer p {
-    margin-bottom: 10px; /* Ajoute un espacement sous le texte */
-    white-space: normal; /* Permet au texte de revenir à la ligne */
+  footer p {
+    text-align: left; /* Aligne à gauche pour écrans plus larges */
+    font-size: 1rem;
   }
-
-  .social-media {
-    justify-content: center; /* Centre les icônes de réseaux sociaux */
+  .social-media img {
+    height: 40px; /* Augmente la taille des icônes sur écrans moyens et grands */
+    width: 40px;
   }
 }
 
 @media (max-width: 480px) {
-  .footer {
-    padding: 20px; /* Ajoute un espace suffisant pour les très petits écrans */
+  footer {
+    flex-direction: column; /* Empile les éléments sur petits écrans */
+    padding: 15px 10px;
   }
-
-  img {
-    height: 25px;
-    width: 25px; /* Redimensionne les icônes pour les petits écrans */
+  footer p {
+    font-size: 0.8rem; /* Taille réduite pour optimiser l'espace */
+    margin-bottom: 10px;
+  }
+  .social-media img {
+    height: 25px; /* Taille réduite pour petits écrans */
+    width: 25px;
   }
 }
-
