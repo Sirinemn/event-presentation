@@ -24,30 +24,30 @@
   
   footer {
     display: flex;
-    flex-wrap: wrap; /* Permet de gérer les débordements sur plusieurs lignes */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     color: black;
     font-family: 'Lato', sans-serif;
     border-top: 1px solid #ddd;
-    background-color: #f8f8f8; /* Couleur de fond pour plus de contraste */
+    background-color: #f8f8f8; 
     text-align: center;
   }
   
   footer p {
-    flex: 1 1 auto; /* Prend de la place restante tout en permettant un retour à la ligne */
+    flex: 1 1 auto; 
     margin: 5px 0;
-    text-align: center; /* Centre le texte sur petits écrans */
-    font-size: 0.9rem; /* Taille réduite pour petits écrans */
+    text-align: center; 
+    font-size: 0.9rem; 
   }
   
   .social-media {
     display: flex;
-    flex: 1 1 auto; /* Prend de la place restante */
-    justify-content: center; /* Centre les icônes sur petits écrans */
+    //flex: 1 1 auto; 
+    justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Ajoute un espace pour éviter que les icônes touchent le texte */
+    margin-top: 10px;
   }
   
   .social-media a {
@@ -57,16 +57,16 @@
   .social-media img {
     height: 30px;
     width: 30px;
-    margin: 0 10px; /* Espacement latéral entre les icônes */
+    margin: 0 10px; 
     transition: transform 0.3s ease;
   }
   
   .social-media img:hover {
-    transform: scale(1.2); /* Effet d'agrandissement au survol */
+    transform: scale(1.2); 
   }
   
   h1 {
-    font-size: 4em; /* Augmenter la taille du titre */
+    font-size: 4em; 
     color: #003366;
     margin-bottom: 20px;
     text-align: left;
